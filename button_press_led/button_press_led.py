@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO #Use GPIO library
 import time #Use time library
 
-GPIO.setwarnings(FALSE)
+GPIO.setwarnings(False)
 
 ledPin = 11    # pin11 is connected to the led anode (+ve pin), cathode(-ve pin) connected to pin9 GND
 buttonPin = 16  # pin 16 is connected to the button - other button pin is connected to gnd - pin 14

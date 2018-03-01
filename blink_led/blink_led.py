@@ -1,6 +1,8 @@
 import RPi.GPIO as GPIO #Use GPIO library
 import time #Use time library
 
+GPIO.setwarnings(False)
+
 ledPin = 11    # pin11 is connected to the led anode (+ve pin)
 GPIO.setmode(GPIO.BOARD)       # Numbers GPIOs by physical location
 GPIO.setup(ledPin, GPIO.OUT)   # Set ledPin's mode as output

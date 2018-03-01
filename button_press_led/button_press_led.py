@@ -12,9 +12,6 @@ GPIO.output(ledPin, GPIO.LOW)   #initially turn off the led
 
 GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)    #Set buttonPin as input and enable pullup resistor
 
-#https://makezine.com/projects/tutorial-raspberry-pi-gpio-pins-and-python/
-#https://sourceforge.net/p/raspberry-gpio-python/wiki/Inputs/
-
 while True: #Loop indefinitely
   GPIO.wait_for_edge(buttonPin, GPIO.FALLING) #Button was pressed
   print('Button Pressed') #Display button pressed

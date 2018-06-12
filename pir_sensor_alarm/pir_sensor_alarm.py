@@ -8,7 +8,7 @@ buzzerPin = 11  # pin 11 is connected to the +ve buzzer pin; -ve connected to pi
 GPIO.setmode(GPIO.BOARD)  # Numbers GPIOs by physical location
 
 GPIO.setup(pirPin, GPIO.IN); #set the pirPin as input
-GPIO.setup(buzzerPin, GPIO.OUT); #set the buzzer pin as output
+GPIO.setup(buzzerPin, GPIO.OUT) #set the buzzer pin as output
 GPIO.output(buzzerPin, GPIO.LOW) #initially turn off the buzzer
 
 #define alarm events
@@ -25,4 +25,4 @@ def turnOffAlarm(pirPin):
     GPIO.output(buzzerPin, GPIO.LOW)  # Turn buzzer off
 
 #adding a callback function when the pir sensor output rises when motion is detected
-GPIO.add_event_detect(pirPin, GPIO.RISING, callback=soundAlarm);
+GPIO.add_event_detect(pirPin, GPIO.RISING, callback=soundAlarm)

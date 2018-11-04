@@ -26,8 +26,8 @@ def turnOffAlarm():
 try:
     #adding a callback function when the pir sensor output rises when motion is detected
     GPIO.add_event_detect(pirPin, GPIO.RISING, callback=soundAlarm);
-except: KeyboardInterrupt
+except KeyboardInterrupt:
     print("You have exited the program.")
 finally:
-        #Clean up GPIO pins when exiting the program
-        GPIO.cleanup()
+    #Clean up GPIO pins when exiting the program
+    GPIO.cleanup()

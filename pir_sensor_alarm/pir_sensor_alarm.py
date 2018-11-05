@@ -12,7 +12,7 @@ GPIO.setup(buzzerPin, GPIO.OUT); #set the buzzer pin as output
 GPIO.output(buzzerPin, GPIO.LOW) #initially turn off the buzzer
 
 #define alarm events
-def soundAlarm():
+def soundAlarm(pirPin):
   #sound alarm (for 2 seconds )
   print("Sound Alarm")
   GPIO.output(buzzerPin, GPIO.HIGH)  # Turn buzzer on
@@ -23,11 +23,5 @@ def turnOffAlarm():
   #turn off alarm
     GPIO.output(buzzerPin, GPIO.LOW)  # Turn buzzer off
 
-try:
-    #adding a callback function when the pir sensor output rises when motion is detected
-    GPIO.add_event_detect(pirPin, GPIO.RISING, callback=soundAlarm);
-except KeyboardInterrupt:
-    print("You have exited the program.")
-finally:
-    #Clean up GPIO pins when exiting the program
-    GPIO.cleanup()
+#adding a callback function when the pir sensor output rises when motion is detected
+GPIO.add_event_detect(pirPin, GPIO.RISING, callback=soundAlarm);

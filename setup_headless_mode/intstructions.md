@@ -5,7 +5,7 @@
 
 ### Step 1.
 
-Flash your SD Card with the latest version of Raspbian using [Etcher](https://www.balena.io/etcher/){:target="_blank" rel="noopener"}. I show how to do this in the course
+Flash your SD Card with the latest version of Raspbian using [Etcher](https://www.balena.io/etcher/). I show how to do this in the course
 
 
 
@@ -118,7 +118,7 @@ Save and exit
 
 ### Step 7:
 
-Install [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/){:target="_blank" rel="noopener"} on your computer. I show you how to do this in the course in the section connecting remotely to your computer via VNC
+Install [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) on your computer. I show you how to do this in the course in the section connecting remotely to your computer via VNC
 
 
 

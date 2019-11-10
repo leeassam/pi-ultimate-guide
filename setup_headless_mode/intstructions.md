@@ -1,15 +1,15 @@
-Setup your Raspberry Pi in Headless Mode - No extra monitor, keyboard or mouse
+# Setup your Raspberry Pi in Headless Mode - No extra monitor, keyboard or mouse
 
-No extra monitor, no hdmi cable, no extra mouse or keyboard, just one laptop or computer - No Problem
-
-
->> Step 1.
-
-Flash your SD Card with the latest version of Raspbian using Etcher. I show how to do this in the course
+## No extra monitor, no hdmi cable, no extra mouse or keyboard, just one laptop or computer - No Problem
 
 
+- Step 1.
 
->> Step 2. 
+Flash your SD Card with the latest version of Raspbian using [Etcher](https://www.balena.io/etcher/). I show how to do this in the course
+
+
+
+- Step 2. 
 
 Once you have your SD card flashed, insert it again into your laptop.
 
@@ -17,7 +17,7 @@ Open up File Explorer and you should see your SD card show up as a drive. Double
 
 
 
->> Step 3.
+- Step 3.
 
 You will need to create two files.
 
@@ -38,7 +38,7 @@ https://www.iso.org/obp/ui/#search
 Put the following in your wpa_supplicant.conf file:
 
 
-
+```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=<<TWOLETTERCOUNTRYCODE>>
@@ -46,11 +46,11 @@ network={
     ssid="«your_SSID»"
     psk="«your_PSK»"
 }
-
+```
 
 So as an example, the contents of your wpa_supplicant.conf file might look like:
 
-
+```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=US
@@ -58,32 +58,38 @@ network={
     ssid="Samsung Galaxy 29393"
     psk="juysjmd23"
 }
+```
+
 Save the files and eject your SD Card
 
->> Step 4
+- Step 4
 
 Insert your SD card into the RPi and boot it up. If you look on your hotspot network on your phone, you should see raspberry pi connected to your network. You should also be able to see the IP address that was assigned to the Raspberry Pi on your phone if you look at the details. If you have access to the router of your wireless network, you should be able to see the IP address assigned to your Raspberry Pi.
 
 You can also try running the following command on a terminal from a laptop connected to the same wireless network as your Raspberry Pi
 
+```
 ping raspberrypi
+```
 
 Depending on the security setup of your wireless network, you may or may not see the IP address of the ping responded. This would be the ip address of your Raspberry Pi.
 
->> Step 5
+- Step 5
 
 Connect to the Raspberry Pi via SSH. Ensure that your computer or laptop is connected to the same HOTSPOT on your phone or the same wireless network.
 
 
 Open the command line on your Windows machine or Terminal on your Mac and type the following
 
-
+```
 ssh pi@IP_Address_Of_PI 
+```
 
 eg
 
+```
 ssh pi@192.168.43.2 
-
+```
 
 Type in yes to accept the fingerprint if you get a prompt
 
@@ -91,7 +97,7 @@ For the password, enter raspberry and hit Enter. You should now be connected to 
 
 
 
->> Step 6.
+- Step 6.
 
 Enable the VNC Server
 
@@ -99,8 +105,9 @@ Enable the VNC Server
 
 Type the following:
 
+```
 sudo raspi-config 
-
+```
 
 
 Navigate to the "Interfacing Options" and enable VNC
@@ -109,20 +116,21 @@ Navigate to the "Interfacing Options" and enable VNC
 
 Save and exit
 
->> Step 7:
+- Step 7:
 
-Install VNC Viewer on your computer. I show you how to do this in the course in the section connecting remotely to your computer via VNC
+Install [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) on your computer. I show you how to do this in the course in the section connecting remotely to your computer via VNC
 
 
 
->> Step 8:
+- Step 8:
 
 Enter the IP address that was assigned to your Raspberry Pi and the following
 
+```
 Username: pi
 
 Password: raspberry
-
+```
 
 Accept the fingerprint prompt with yes if you get it and BOOM, you should be logged into your Pi!
 

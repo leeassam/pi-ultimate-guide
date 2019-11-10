@@ -5,7 +5,7 @@
 
 ### Step 1.
 
-Flash your SD Card with the latest version of Raspbian using [Etcher](https://www.balena.io/etcher/). I show how to do this in the course
+Flash your SD Card with the [latest version of Raspbian](https://www.raspberrypi.org/downloads/raspbian/) using [Etcher](https://www.balena.io/etcher/). I show how to do this in the course
 
 
 

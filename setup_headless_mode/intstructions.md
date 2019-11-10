@@ -1,6 +1,8 @@
-# Setup your Raspberry Pi in Headless Mode - No extra monitor, keyboard or mouse
+# Setup your Raspberry Pi in Headless Mode - No additional monitor, keyboard or mouse needed
 
 ## No extra monitor, no hdmi cable, no extra mouse or keyboard, just one laptop or computer - No Problem
+
+If you just have a Raspberry Pi with an SD card and power adapter and want to set it up, here are the steps to follow. You can use an existing computer or laptop to get your SD card prepped. Follow the steps below.
 
 
 ### Step 1.

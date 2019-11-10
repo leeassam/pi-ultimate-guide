@@ -118,14 +118,14 @@ Navigate to the "Interfacing Options" and select **VNC**
 
 Would you like the VNC Server to be enabled?
 
-Select **<Yes>**
+Select **Yes**
 
 2. Select **Boot to Desktop**
 
 - From the main Raspberry Pi Configuration screen select **Boot Options**
 - Select **Desktop / CLI : Choose whetherto boot into a desktop environment or the command line**
 - Select **Desktop Autologin Desktop GUI, automatically logged in as 'pi' user**
-- Select <Ok>
+- Select **Ok**
 
 3. Specify a **Screen Resolution**
 
@@ -133,7 +133,7 @@ Select **<Yes>**
 -  Select **Resolution**
 -  Select the resolution for your desktop/laptop monitor
     - I select **1920x1080
-- Select **<Ok>**
+- Select **Ok**
 
 Finish and **Reboot** for the changes to take effect.
 

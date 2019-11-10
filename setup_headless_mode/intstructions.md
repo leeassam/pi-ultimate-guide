@@ -5,7 +5,7 @@
 
 ### Step 1.
 
-Flash your SD Card with the latest version of Raspbian using [Etcher](https://www.balena.io/etcher/). I show how to do this in the course
+Flash your SD Card with the latest version of Raspbian using [Etcher](https://www.balena.io/etcher/){:target="_blank" rel="noopener"}. I show how to do this in the course
 
 
 
@@ -31,7 +31,7 @@ This file is created on the root level of the SD card (boot partition) when you 
 
 2. Create another file called **wpa_supplicant.conf** and again save this on the root top level. In this file, place the following contents. Turn on the hotspot on your phone so that could get the SSID of the network it creates or if you know the SSID of the wireless network that you want to connect to, use this. Also get the password you need to connect to your hotspot or the Wifi network. You will also need to get your Two Letter ISO Country Code to put in the file
 
-You can get your Country Code here:
+You can get your **Country Code** here:
 
 https://www.iso.org/obp/ui/#search
 
@@ -48,7 +48,7 @@ network={
 }
 ```
 
-So as an example, the contents of your wpa_supplicant.conf file might look like:
+So as an example, the contents of your **wpa_supplicant.conf** file might look like:
 
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
@@ -64,7 +64,7 @@ Save the files and eject your SD Card
 
 ### Step 4
 
-Insert your SD card into the RPi and boot it up. If you look on your hotspot network on your phone, you should see raspberry pi connected to your network. You should also be able to see the IP address that was assigned to the Raspberry Pi on your phone if you look at the details. If you have access to the router of your wireless network, you should be able to see the IP address assigned to your Raspberry Pi.
+Insert your SD card into the RPi and boot it up. If you look on your hotspot network on your phone, you should see raspberry pi connected to your network. You should also be able to see the **IP address** that was assigned to the Raspberry Pi on your phone if you look at the details. If you have access to the router of your wireless network, you should be able to see the IP address assigned to your Raspberry Pi.
 
 You can also try running the following command on a terminal from a laptop connected to the same wireless network as your Raspberry Pi
 
@@ -93,7 +93,7 @@ ssh pi@192.168.43.2
 
 Type in yes to accept the fingerprint if you get a prompt
 
-For the password, enter raspberry and hit Enter. You should now be connected to your Raspberry Pi
+For the password, enter **raspberry** and hit Enter. You should now be connected to your Raspberry Pi
 
 
 
@@ -118,13 +118,13 @@ Save and exit
 
 ### Step 7:
 
-Install [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) on your computer. I show you how to do this in the course in the section connecting remotely to your computer via VNC
+Install [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/){:target="_blank" rel="noopener"} on your computer. I show you how to do this in the course in the section connecting remotely to your computer via VNC
 
 
 
 ### Step 8:
 
-Enter the IP address that was assigned to your Raspberry Pi and the following
+Enter the **IP address** that was assigned to your Raspberry Pi and the following
 
 ```
 Username: pi

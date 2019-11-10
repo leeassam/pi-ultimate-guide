@@ -101,7 +101,9 @@ For the password, enter **raspberry** and hit Enter. You should now be connected
 
 ### Step 6.
 
-Enable the VNC Server
+Make Configuration Changes
+
+1. Enable the **VNC Server**
 
 
 
@@ -112,11 +114,28 @@ sudo raspi-config
 ```
 
 
-Navigate to the "Interfacing Options" and enable VNC
+Navigate to the "Interfacing Options" and select **VNC**
 
+Would you like the VNC Server to be enabled?
 
+Select **<Yes>**
 
-Save and exit
+2. Select **Boot to Desktop**
+
+- From the main Raspberry Pi Configuration screen select **Boot Options**
+- Select **Desktop / CLI : Choose whetherto boot into a desktop environment or the command line**
+- Select **Desktop Autologin Desktop GUI, automatically logged in as 'pi' user**
+- Select <Ok>
+
+3. Specify a **Screen Resolution**
+
+- From the main Raspberry Pi Configuration screen select **Advanced Options**
+-  Select **Resolution**
+-  Select the resolution for your desktop/laptop monitor
+    - I select **1920x1080
+- Select **<Ok>**
+
+Finish and **Reboot** for the changes to take effect.
 
 ### Step 7:
 

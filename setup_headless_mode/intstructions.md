@@ -35,7 +35,7 @@ This file is created on the root level of the SD card (boot partition) when you 
 
 You can get your **Country Code** here:
 
-https://www.iso.org/obp/ui/#search
+https://www.nationsonline.org/oneworld/country_code_list.htm
 
 Put the following in your wpa_supplicant.conf file:
 

@@ -7,7 +7,7 @@ If you just have a Raspberry Pi with an SD card and power adapter and want to se
 
 ### Step 1.
 
-Flash your SD Card with the [latest version of Raspbian](https://www.raspberrypi.org/downloads/raspbian/) using [Etcher](https://www.balena.io/etcher/). I show how to do this in the course
+Flash your SD Card with the [latest version of Raspberry Pi OS](https://www.raspberrypi.com/software/) using [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [Etcher](https://www.balena.io/etcher/). I show how to do this in the course
 
 
 
@@ -67,6 +67,8 @@ Save the files and eject your SD Card
 ### Step 4
 
 Insert your SD card into the RPi and boot it up. If you look on your hotspot network on your phone, you should see raspberry pi connected to your network. You should also be able to see the **IP address** that was assigned to the Raspberry Pi on your phone if you look at the details. If you have access to the router of your wireless network, you should be able to see the IP address assigned to your Raspberry Pi.
+
+Windows users can try downloading [Advanced IP Scanner](https://www.advanced-ip-scanner.com/). This should show the IP addresses of the devices connected on your network.
 
 You can also try running the following command on a terminal from a laptop connected to the same wireless network as your Raspberry Pi
 
